@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div>Hi 4</div>
+    <div id="interactive" class="viewport"></div>
+    <button id="scan_btn" data-status="false">Scan now</button>
+    <button id="stop_btn">Stop scap</button>
+
+    <div>View Result: <span id="v"></span></div>
+
+    <svg id="barcode"></svg>
+
+    <script src="./js/quagga.js"></script>
+    <script src="./js/js_barcode.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
