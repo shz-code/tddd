@@ -1,6 +1,10 @@
 let scanBtn = document.getElementById("scan_btn"),
-    stopBtn = document.getElementById("stop_btn");
+    stopBtn = document.getElementById("stop_btn"),
+    bar_code = document.querySelector("#barcode"),
+    validityCheck = document.querySelector(".validity_check"),
+    barcodeRes = document.querySelector("#barcode_res");
 
+bar_code.style.display = "none";
 const quaggaInit = () => {
     Quagga.init(
         {
@@ -79,8 +83,16 @@ stopBtn.addEventListener("click", () => {
     }
 });
 
+const check_barcode = () =>{
+    let code = validityCheck.getAttribute("code");
+    console.log(code);
+}
+
 Quagga.onDetected(function (result) {
-    console.log(result.codeResult.code);
-    document.getElementById("v").innerHTML = `${result.codeResult.code}`;
+    document.getElementById("v").innerHTML = result.codeResult.code;
+    bar_code.style.display = "block";
     JsBarcode("#barcode", `${result.codeResult.code}`);
+    validityCheck.classList.add("show");
+    validityCheck.setAttribute("code",result.codeResult.code);
+    barcodeRes.innerHTML = result.codeResult.code
 });
