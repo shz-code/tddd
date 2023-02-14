@@ -11,53 +11,11 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css" />
-
-    <style>
-        h1#title {
-            string-set: title content(text);
-        }
-        @page{
-            size: 230mm 300mm;
-            bleed: 6mm;
-            marks: crop;
-            @bottom-center{
-                content: string(title);
-                text-transform: uppercase;
-            }
-            @bottom-left{
-                content: 'Page ' counter(page) ' of ' counter(pages);
-            }
-        }
-        .meta_info{
-            height: 100vh;
-        }
-        .token{
-            position: relative;
-        }
-        .token::before{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: url("images/cse.png") no-repeat center;
-            opacity: 0.1;
-        }
-        .token_body{
-            position: relative;
-        }
-        .qr-code{
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
-    </style>
 </head>
 
 <body>
     <h1 id="title" class="text-start">CSE foundation day</h1>
-    <!-- <div class="meta_info">
+    <div class="meta_info">
         <p class="lead fw-bold">Total pages: <span class="fw-normal">42</span></p>
         <p class="lead fw-bold">Batch print: <span class="fw-normal">400 tokens</span></p>
         <p class="lead fw-bold">Tokens: <span class="fw-normal">21223 - 21623</span></p>
@@ -80,34 +38,158 @@
                 <td>20</td>
               </tr>
               <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>21223</td>
+                <td>21243</td>
+                <td>20</td>
+              </tr>
+              <tr>
                 <th scope="row"></th>
                 <td></td>
                 <td colspan="2">Total Tokens &nbsp; &nbsp; &nbsp; &nbsp; -> &nbsp; &nbsp; &nbsp; &nbsp; 400</td>
               </tr>
             </tbody>
           </table>
-    </div>  -->
+    </div> 
     <div class="tokens_container">
-        <div class="row justify-content-between">
-            <div class="token border border-gray col-6">
+        <div class="row justify-content-between gap-2">
+            <div class="token border border-gray">
                 <div class="token_headaer">
-                    <p class="fw-bold text-center border-bottom">CSE Foundation Day</p>
+                    <p class="fw-bold text-center">CSE Foundation Day</p>
                 </div>
                 <div class="token_body d-flex justify-content-between border-bottom">
-                    <ul>
+                    <ul class="token_usage_print">
                         <li>Entry</li>
                         <li>Food</li>
+                        <li>Cultural Gala</li>
                     </ul>
                     <img src=
-                    "https://chart.googleapis.com/chart?cht=qr&chl=h+World&chs=80x80&chld=L|0"
+                    "https://chart.googleapis.com/chart?cht=qr&chl=http://127.0.0.1:5500/print_token.html&chs=100x100&chld=L|0"
                             class="qr-code img-responsive" /> 
                 </div>
                 <div class="token_footer d-flex justify-content-center">
-                    <svg class="barcode"></svg>
+                    <svg class="barcode barcode_0"></svg>
                 </div>
             </div>
-            <div class="token border border-gray col-6">
-
+            <div class="token border border-gray">
+                <div class="token_headaer">
+                    <p class="fw-bold text-center">CSE Foundation Day</p>
+                </div>
+                <div class="token_body d-flex justify-content-between border-bottom">
+                    <ul class="token_usage_print">
+                        <li>Entry</li>
+                        <li>Food</li>
+                        <li>Cultural Gala</li>
+                    </ul>
+                    <img src=
+                    "https://chart.googleapis.com/chart?cht=qr&chl=http://127.0.0.1:5500/print_token.html&chs=100x100&chld=L|0"
+                            class="qr-code img-responsive" /> 
+                </div>
+                <div class="token_footer d-flex justify-content-center">
+                    <svg class="barcode barcode_1"></svg>
+                </div>
             </div>
         </div>
     </div>  
@@ -118,11 +200,14 @@
     <script src="./js/paged.js"></script>
     <script src="./js/js_barcode.js"></script>
     <script>
-        const barcode = document.querySelector(".barcode");
-        JsBarcode(".barcode", `21203010`);
-        barcode.style.height = "80px";
-        barcode.querySelector("rect").style.fill = "#ffffff00"
-        console.log(barcode.querySelector("rect"));
+        const barcodes = document.querySelectorAll(".barcode");
+        for(i = 0;i < barcodes.length ; i++)
+        {
+            let cls = ".barcode_"+i;
+            JsBarcode(cls, i);
+            barcodes[i].style.height = "100px";
+            barcodes[i].querySelector("rect").style.fill = "#ffffff00"
+        }
     </script>
 </body>
 
